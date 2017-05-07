@@ -8,7 +8,14 @@ CAISO LMP: active
 <h3><b>California ISO Real Time Prices</b></h3>
 <br>
 
-<p> <b>Description</b>: I have used a geospatial method (cubic spline) to interpolate prices across California. More details are forthcoming, but please ask if you have any questions. </p>
+<p> <b>Description</b>: I have used a geospatial method (bicubic spline) to interpolate real time prices throughout California. 
+    The interpolation routine uses Renka's tripack (TOMS 751), developed in Fortran, and all interpolation has been limited to the convex hull
+    of the data. Node selection is conditional on possessing <a href="https://github.com/emunsing/CAISO-Scrapers/tree/master/LMP%20Location%20Scraper">
+    geographic location</a>, and I have included supply and demand nodes. </p>
+    
+<p>Renka, Robert. 1996. <a href="http://dl.acm.org/citation.cfm?id=225546" target="_blank">Algorithm 751: TRIPACK: a constrained two-dimensional Delaunay triangulation package.</a>	<i>ACM Transactions on Mathematical Software</i>, 22: 1-8.</p>
+    
+<p>Maps are developed in <b>R</b> using ggplot2. More details are forthcoming, but please ask if you have any questions. </p>
 
 <p>Below is a sample video for the second week of August, 2015:</p>
 
