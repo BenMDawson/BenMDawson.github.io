@@ -1,0 +1,14 @@
+- title: CV
+  url: /cv/DawsonCV.pdf
+- title: Publications
+  url: /publications.html
+- title: Projects
+  url: /support.html
+  sublinks:
+    - title: Ecosystems
+      url: /ecosystems.html
+    - title: CAISO LMP
+      url: /caiso.html
+    #- title: separator
+    #- title: Census Geographies
+      #url: /census.html
